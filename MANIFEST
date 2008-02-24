@@ -1,0 +1,9 @@
+Makefile.PL
+MANIFEST
+lib/Blog/Normalize.pm
+lib/Blog/Normalize/Blogger.pm
+lib/Blog/Normalize/MovableType.pm
+lib/Blog/Normalize/TextMotion.pm
+lib/Blog/Normalize/Wordpress.pm
+Changes
+.project
