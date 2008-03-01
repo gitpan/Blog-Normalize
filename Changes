@@ -1,2 +1,6 @@
+0.0rc2 - Sat Mar  1 16:24:44 EST 2008
+	* Adding basic module Blog::Normalize::Tumblr.
+	* Adding the examples directory.
+
 0.0rc1 - Saturday 2008-02-23
 	First unfinished release.

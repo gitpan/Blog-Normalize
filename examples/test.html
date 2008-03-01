@@ -1,0 +1,704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width = 620"/>
+
+        <title>Tumblr</title>
+
+        <link rel="icon" href="http://assets.tumblr.com/images/favicon.gif" type="image/gif"/>
+        <link rel="apple-touch-icon" href="http://assets.tumblr.com/images/apple_touch_icon.png"></link>
+
+                <script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/prototype.js"></script>
+<script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/effects.js"></script>
+<script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/application.js?26"></script>
+<script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/tumblelog.js"></script>
+
+
+        <link rel="stylesheet" type="text/css"
+        href="http://assets.tumblr.com/stylesheets/compressed/global.css?26"/>
+
+                    <link rel="stylesheet" type="text/css"
+                href="http://assets.tumblr.com/stylesheets/compressed/dashboard.css?26"/>
+
+
+
+            </head>
+    <body id="dashboard_index" onclick="close_menus();"
+        >
+        <div id="container">
+            <div id="header">
+                <a href="/"><img
+                src="http://assets.tumblr.com/images/logo.png?4" id="logo" alt="Tumblr"/></a>
+
+                                    <ul id="primary_nav">
+                                                    <li class="nav" id="nav_account_menu" style="z-index:7;">
+
+                            <a href="#" onclick="return open_menu(\'account_menu\');">Account <img
+                            src="http://assets.tumblr.com/images/nav_down_arrow.png" class="down_arrow" alt=""/></a>
+
+                            <img src="http://assets.tumblr.com/images/primary_nav_bubble_arrow.png" class="arrow" alt=""/>
+
+                            <div id="account_menu" class="menu" style="display:none;"
+                            onclick="just_clicked_menu = true;">
+                                <ul class="menu_items">
+                                    <li onclick="location.href=\'/goodies\';"><a
+                                    href="/goodies">Goodies</a></li>
+                                    <li onclick="location.href=\'/feeds\';"><a
+                                    href="/feeds">Feeds</a></li>
+                                    <li onclick="location.href=\'/preferences\';"><a
+                                    href="/preferences">Preferences</a></li>
+                                    <li onclick="location.href=\'/help\';"><a
+                                    href="/help">Help</a></li>
+                                    <li onclick="location.href=\'/logout\';"><a
+                                    href="/logout">Log out</a></li>
+                                    <li onclick="location.href=\'http://tumblr.damog.net/\';"
+                                    class="last"><a href="http://tumblr.damog.net/">
+                                                                                    Prueba                                                                                
+&#8594;
+                                    </a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                                                    <li class="nav" id="nav_channels_menu" style="z-index:6;">
+
+                            <a href="#" onclick="return open_menu(\'channels_menu\');">Groups <img
+                            src="http://assets.tumblr.com/images/nav_down_arrow.png"
+                            class="down_arrow" alt=""/></a>
+
+                            <img src="http://assets.tumblr.com/images/primary_nav_bubble_arrow.png"
+                            class="arrow" alt=""/>
+
+                            <div id="channels_menu" class="menu" style="display:none;"
+                            onclick="just_clicked_menu = true;">
+                                <ul class="menu_items">
+
+                                    <li onclick="location.href=\'/create/group\';"
+                                    class="last"><a href="/create/group">+ Create a group</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav active" style="z-index:5;">
+                            <a href="/dashboard">Dashboard</a>
+                            <img src="http://assets.tumblr.com/images/primary_nav_bubble_arrow.png" class="arrow" alt=""/>
+                        </li>
+                    </ul>
+                            </div>
+
+            <noscript>
+                <div class="javascript_notice">
+                    Some functionality may not be available unless you <a target="_blank"
+                    href="https://www.google.com/adsense/support/bin/answer.py?hl=en&answer=12654">enable JavaScript</a>.
+                </div>
+            </noscript>
+
+            <div id="content_container">
+                <div style="background:url(\'http://assets.tumblr.com/images/content_top.png\') no-repeat top center;">
+                    <div style="background:url(\'http://assets.tumblr.com/images/content_bottom.png\') no-repeat bottom center;">
+                        <div id="content">
+
+<!-- Title -->
+<h1>
+            <a href="/dashboard">Dashboard</a>
+
+    </h1>
+
+<!-- People Button -->
+<div id="people_button" style="">
+    <div class="inner_content">
+                    <a href="/following" onmouseover="Element.show(\'following_label\');"
+            onmouseout="Element.hide(\'following_label\');">
+                +                        <img src="http://assets.tumblr.com/images/dude.gif" class="person"
+                alt="Following"/>
+            </a>
+    </div>
+
+    <div style="position:absolute; top:39px; text-align:center; left:0px; right:0px;
+    "><img
+    src="/images/following_label.png" id="following_label"
+    alt="Following" style="display:none;"/><img style="display:none;"
+    src="/images/members_label.png" alt="Members" id="members_label"/></div>
+
+    <img src="http://assets.tumblr.com/images/round_corner_top_left.png" class="top_left_corner"/>
+    <img src="http://assets.tumblr.com/images/round_corner_top_right.png" class="top_right_corner"/>
+    <img src="http://assets.tumblr.com/images/round_corner_bottom_left.png" class="bottom_left_corner"/>
+    <img src="http://assets.tumblr.com/images/round_corner_bottom_right.png" class="bottom_right_corner"/>
+
+    <!-- Preload Filter button images -->
+    <script type="text/javascript">
+        var filter_image    = new Image()
+        filter_image.src    = \'/images/filter.png\';
+
+        var filter_image_on = new Image();
+        filter_image_on.src = \'/images/filter_on.png\';
+
+        var customize_label = new Image();
+        customize_label.src = \'/images/customize_label.png\';
+
+        var filter_label = new Image();
+        filter_label.src = \'/images/filter_label.png\';
+
+        var following_label = new Image();
+        following_label.src = \'/images/following_label.png\';
+    </script>
+
+    <!-- Filter Button -->
+    <img src="/images/filter.png"
+    id="filter_button" onmouseover="Element.show(\'filter_label\');"
+    onmouseout="Element.hide(\'filter_label\');"
+    alt="Filter"
+    onclick="click_filter_button(false);"/>
+
+    <img src="/images/filter_label.png" id="filter_label" alt="Filter"
+    style="display:none;"/>
+
+            <a href="/customize"><img
+        src="/images/customize.png"
+        id="customize_button" onmouseover="Element.show(\'customize_label\');"
+        onmouseout="Element.hide(\'customize_label\');" alt="Customize"/></a>
+
+        <img src="/images/customize_label.png" id="customize_label"
+        alt="Customize" style="display:none;"/>
+    </div>
+
+<!-- Invite / Members -->
+
+
+<!-- Invite confirmation -->
+
+<form id="filter_pane" style="display:none;" onsubmit="return submit_filter();">
+    Show
+    <select name="show" id="filter_type">
+        <option value="everything">everything</option>
+        <option value="text" >text</option>
+        <option value="photos" >photos</option>
+        <option value="quotes" >quotes</option>
+        <option value="links" >links</option>
+        <option value="chats" >chats</option>
+        <option value="audio" >audio</option>
+        <option value="videos" >videos</option>
+    </select>
+            by
+        <select name="by" id="filter_author">
+            <option value="everyone">everyone</option>
+            <option value="me" >me</option>
+        </select>
+        <input type="image" class="submit" alt="Filter" title="Filter"
+    src="http://assets.tumblr.com/images/filter_pane_arrow.png"/>
+</form>
+
+
+
+<!-- Posts -->
+<ol id="posts"  class="only_me">
+
+
+
+
+        <li class="post is_mine with_avatar">
+            <div style="padding:1px;">
+                <div class="post_container">
+                    <div class="username" style="display:block;">
+                        Post to
+
+                                                                                <a href="http://tumblr.damog.net/"
+                            style="text-decoration:underline;">tumblr.damog.net</a>:
+                                            </div>
+
+                    <div style="padding:0px 0px 0px 0px; margin-left:0px;"><img alt="Create a post"
+                    src="http://assets.tumblr.com/images/add_post_icons.png?2" usemap="#add_post"
+                    style="width:457px; height:76px; border-width:0px;"/></div>
+
+                    <map id="add_post" name="add_post">
+                        <area shape="rect" coords="0,0,75,78"   title="Post Text" alt="Text"
+                        href="/new/text"/>
+                        <area shape="rect" coords="75,0,139,78"  title="Post a Photo" alt="Photo"
+                        href="/new/photo"/>
+                        <area shape="rect" coords ="139,0,203,78" title="Post a Quote" alt="Quote"
+                        href="/new/quote"/>
+                        <area shape="rect" coords ="203,0,267,78" title="Post a Link" alt="Link"
+                        href="/new/link"/>
+                        <area shape="rect" coords ="267,0,331,78" title="Post a Chat" alt="Chat"
+                        href="/new/chat"/>
+                        <area shape="rect" coords ="331,0,395,78" title="Post Audio" alt="Audio"
+                        href="/new/audio"/>
+                        <area shape="rect" coords ="395,0,459,78" title="Post a Video" alt="Video"
+                        href="/new/video"/>
+                    </map>
+                </div>
+            </div>
+
+            <div class="so_ie_doesnt_treat_this_as_inline">
+                <div class="arrow"><img src="http://assets.tumblr.com/images/arrow_mask.png" alt=""/></div>
+
+                <div style="background:url(\'http://assets.tumblr.com/images/default_avatar_40.gif\') no-repeat;"
+                class="avatar"><a href="http://tumblr.damog.net"><img
+                src="http://assets.tumblr.com/images/avatar_border_40px.png"></a></div>
+
+                <img src="http://assets.tumblr.com/images/round_corner_top_left.png" class="top_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_top_right.png" class="top_right_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_left.png" class="bottom_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_right.png" class="bottom_right_corner"/>
+            </div>
+        </li>
+
+
+
+
+        <li
+          id="post27709266"
+          class="
+            post
+            regular            same_user_as_last                        is_mine        "
+                    onmouseover="Element.show(\'permalink_27709266\');"
+            onmouseout="Element.hide(\'permalink_27709266\');"
+                >
+
+
+
+            <div style="padding:1px;">
+                <div class="post_container">
+
+                    <div class="username">
+                        <a href="http://tumblr.damog.net">damog</a>:
+                    </div>
+
+                                                                        <div style="font-weight:bold; margin-bottom:2px;">
+                                damog.org                            </div>
+
+                        He comprado el dominio damog.org. A ver qué ponemos aquí.
+
+                    <div id="notes_outer_container_27709266" style="display:none; overflow:hidden;">
+                        <div style="padding-top:10px;">
+                            <div id="notes_container_27709266" style="display:none; overflow:hidden;"></div>
+
+                            <div id="notes_control_27709266" class="notes_control">
+                                <div id="notes_loader_27709266" class="notes_loader">
+                                    Loading...
+                                </div>
+
+                                <div id="notes_hide_link_27709266" style="display:none;" class="notes_hide_link">
+                                    <a href="#" onclick="Effect.SlideUp(\'notes_outer_container_27709266\');
+                                    $(\'show_notes_link_27709266\').style.textDecoration = \'underline\';
+                                    return false;" style="color:#79A0BE;">Hide notes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="so_ie_doesnt_treat_this_as_inline">
+                <div style="background:url(\'http://assets.tumblr.com/images/default_avatar_40.gif\') no-repeat;"
+                class="avatar"><a href="http://tumblr.damog.net"><img
+                src="http://assets.tumblr.com/images/avatar_border_40px.png"></a></div>
+
+                <div class="arrow"><img src="http://assets.tumblr.com/images/arrow_mask.png" alt=""/></div>
+
+                                    <a href="http://tumblr.damog.net/post/27709266" title="Permalink"><img
+                    src="http://assets.tumblr.com/images/permalink.png"
+                    id="permalink_27709266" style="position:absolute; right:1px; top:1px;
+                    width:7px; height:7px; display:none; padding:3px;" alt="permalink"/></a>
+
+                                    <div class="control">
+                        <div id="post_27709266_controls">
+                                                            <form action="/delete" method="post" id="delete_post_27709266"
+                                onsubmit="return confirm(\'Are you sure you want to delete this post?\')"><input
+                                type="hidden" name="id" value="27709266"/><input type="hidden"
+                                name="redirect_to" value="/dashboard"/></form>
+
+                                <a onclick="if (confirm(\'Delete this post?\'))
+                                document.getElementById(\'delete_post_27709266\').submit();
+                                return false;" href="#" title="Delete" class="delete_link"><img
+                                src="http://assets.tumblr.com/images/delete_icon.png?2" alt="Delete"/></a>
+
+                                <a href="/edit/27709266?redirect_to=%2Fdashboard" title="Edit"
+                                class="edit_link"><img src="http://assets.tumblr.com/images/edit_icon.png?2"
+                                alt="Edit"/></a>
+
+                        </div>
+                    </div>
+
+                <img src="http://assets.tumblr.com/images/round_corner_top_left.png"
+                class="top_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_top_right.png"
+                class="top_right_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_left.png"
+                class="bottom_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_right.png"
+                class="bottom_right_corner"/>
+            </div>
+        </li>
+
+        <li
+          id="post27708501"
+          class="
+            post
+            regular            same_user_as_last                        is_mine        "
+                    onmouseover="Element.show(\'permalink_27708501\');"
+            onmouseout="Element.hide(\'permalink_27708501\');"
+                >
+
+
+
+            <div style="padding:1px;">
+                <div class="post_container">
+
+                    <div class="username">
+                        <a href="http://tumblr.damog.net">damog</a>:
+                    </div>
+
+                                                                        <div style="font-weight:bold; margin-bottom:2px;">
+                                TITULO                            </div>
+
+                        <p>Body</p>
+<p>Body </p>
+
+                    <div id="notes_outer_container_27708501" style="display:none; overflow:hidden;">
+                        <div style="padding-top:10px;">
+                            <div id="notes_container_27708501" style="display:none; overflow:hidden;"></div>
+
+                            <div id="notes_control_27708501" class="notes_control">
+                                <div id="notes_loader_27708501" class="notes_loader">
+                                    Loading...
+                                </div>
+
+                                <div id="notes_hide_link_27708501" style="display:none;" class="notes_hide_link">
+                                    <a href="#" onclick="Effect.SlideUp(\'notes_outer_container_27708501\');
+                                    $(\'show_notes_link_27708501\').style.textDecoration = \'underline\';
+                                    return false;" style="color:#79A0BE;">Hide notes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="so_ie_doesnt_treat_this_as_inline">
+                <div style="background:url(\'http://assets.tumblr.com/images/default_avatar_40.gif\') no-repeat;"
+                class="avatar"><a href="http://tumblr.damog.net"><img
+                src="http://assets.tumblr.com/images/avatar_border_40px.png"></a></div>
+
+                <div class="arrow"><img src="http://assets.tumblr.com/images/arrow_mask.png" alt=""/></div>
+
+                                    <a href="http://tumblr.damog.net/post/27708501" title="Permalink"><img
+                    src="http://assets.tumblr.com/images/permalink.png"
+                    id="permalink_27708501" style="position:absolute; right:1px; top:1px;
+                    width:7px; height:7px; display:none; padding:3px;" alt="permalink"/></a>
+
+                                    <div class="control">
+                        <div id="post_27708501_controls">
+                                                            <form action="/delete" method="post" id="delete_post_27708501"
+                                onsubmit="return confirm(\'Are you sure you want to delete this post?\')"><input
+                                type="hidden" name="id" value="27708501"/><input type="hidden"
+                                name="redirect_to" value="/dashboard"/></form>
+
+                                <a onclick="if (confirm(\'Delete this post?\'))
+                                document.getElementById(\'delete_post_27708501\').submit();
+                                return false;" href="#" title="Delete" class="delete_link"><img
+                                src="http://assets.tumblr.com/images/delete_icon.png?2" alt="Delete"/></a>
+
+                                <a href="/edit/27708501?redirect_to=%2Fdashboard" title="Edit"
+                                class="edit_link"><img src="http://assets.tumblr.com/images/edit_icon.png?2"
+                                alt="Edit"/></a>
+
+                        </div>
+                    </div>
+
+                <img src="http://assets.tumblr.com/images/round_corner_top_left.png"
+                class="top_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_top_right.png"
+                class="top_right_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_left.png"
+                class="bottom_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_right.png"
+                class="bottom_right_corner"/>
+            </div>
+        </li>
+
+        <li
+          id="post27706434"
+          class="
+            post
+            regular            same_user_as_last                        is_mine        "
+                    onmouseover="Element.show(\'permalink_27706434\');"
+            onmouseout="Element.hide(\'permalink_27706434\');"
+                >
+
+
+
+            <div style="padding:1px;">
+                <div class="post_container">
+
+                    <div class="username">
+                        <a href="http://tumblr.damog.net">damog</a>:
+                    </div>
+
+                                                                        <div style="font-weight:bold; margin-bottom:2px;">
+                                Este es titulo                            </div>
+
+                        Este es body
+
+                    <div id="notes_outer_container_27706434" style="display:none; overflow:hidden;">
+                        <div style="padding-top:10px;">
+                            <div id="notes_container_27706434" style="display:none; overflow:hidden;"></div>
+
+                            <div id="notes_control_27706434" class="notes_control">
+                                <div id="notes_loader_27706434" class="notes_loader">
+                                    Loading...
+                                </div>
+
+                                <div id="notes_hide_link_27706434" style="display:none;" class="notes_hide_link">
+                                    <a href="#" onclick="Effect.SlideUp(\'notes_outer_container_27706434\');
+                                    $(\'show_notes_link_27706434\').style.textDecoration = \'underline\';
+                                    return false;" style="color:#79A0BE;">Hide notes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="so_ie_doesnt_treat_this_as_inline">
+                <div style="background:url(\'http://assets.tumblr.com/images/default_avatar_40.gif\') no-repeat;"
+                class="avatar"><a href="http://tumblr.damog.net"><img
+                src="http://assets.tumblr.com/images/avatar_border_40px.png"></a></div>
+
+                <div class="arrow"><img src="http://assets.tumblr.com/images/arrow_mask.png" alt=""/></div>
+
+                                    <a href="http://tumblr.damog.net/post/27706434" title="Permalink"><img
+                    src="http://assets.tumblr.com/images/permalink.png"
+                    id="permalink_27706434" style="position:absolute; right:1px; top:1px;
+                    width:7px; height:7px; display:none; padding:3px;" alt="permalink"/></a>
+
+                                    <div class="control">
+                        <div id="post_27706434_controls">
+                                                            <form action="/delete" method="post" id="delete_post_27706434"
+                                onsubmit="return confirm(\'Are you sure you want to delete this post?\')"><input
+                                type="hidden" name="id" value="27706434"/><input type="hidden"
+                                name="redirect_to" value="/dashboard"/></form>
+
+                                <a onclick="if (confirm(\'Delete this post?\'))
+                                document.getElementById(\'delete_post_27706434\').submit();
+                                return false;" href="#" title="Delete" class="delete_link"><img
+                                src="http://assets.tumblr.com/images/delete_icon.png?2" alt="Delete"/></a>
+
+                                <a href="/edit/27706434?redirect_to=%2Fdashboard" title="Edit"
+                                class="edit_link"><img src="http://assets.tumblr.com/images/edit_icon.png?2"
+                                alt="Edit"/></a>
+
+                        </div>
+                    </div>
+
+                <img src="http://assets.tumblr.com/images/round_corner_top_left.png"
+                class="top_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_top_right.png"
+                class="top_right_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_left.png"
+                class="bottom_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_right.png"
+                class="bottom_right_corner"/>
+            </div>
+        </li>
+
+        <li
+          id="post27700523"
+          class="
+            post
+            link            same_user_as_last                        is_mine        "
+                    onmouseover="Element.show(\'permalink_27700523\');"
+            onmouseout="Element.hide(\'permalink_27700523\');"
+                >
+
+
+
+            <div style="padding:1px;">
+                <div class="post_container">
+
+                    <div class="username">
+                        <a href="http://tumblr.damog.net">damog</a>:
+                    </div>
+
+                                            <a href="http://www.pinchetaqueria.com/" style="font-size:120%; font-family:Helvetica;
+                        font-weight:bold;">http://www.pinchetaqueria.com/</a>
+
+                                                    <div style="font-size:90%; margin-top:4px;">
+                                Los primos de Raquel.                            </div>
+
+
+                    <div id="notes_outer_container_27700523" style="display:none; overflow:hidden;">
+                        <div style="padding-top:10px;">
+                            <div id="notes_container_27700523" style="display:none; overflow:hidden;"></div>
+
+                            <div id="notes_control_27700523" class="notes_control">
+                                <div id="notes_loader_27700523" class="notes_loader">
+                                    Loading...
+                                </div>
+
+                                <div id="notes_hide_link_27700523" style="display:none;" class="notes_hide_link">
+                                    <a href="#" onclick="Effect.SlideUp(\'notes_outer_container_27700523\');
+                                    $(\'show_notes_link_27700523\').style.textDecoration = \'underline\';
+                                    return false;" style="color:#79A0BE;">Hide notes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="so_ie_doesnt_treat_this_as_inline">
+                <div style="background:url(\'http://assets.tumblr.com/images/default_avatar_40.gif\') no-repeat;"
+                class="avatar"><a href="http://tumblr.damog.net"><img
+                src="http://assets.tumblr.com/images/avatar_border_40px.png"></a></div>
+
+                <div class="arrow"><img src="http://assets.tumblr.com/images/arrow_mask.png" alt=""/></div>
+
+                                    <a href="http://tumblr.damog.net/post/27700523" title="Permalink"><img
+                    src="http://assets.tumblr.com/images/permalink.png"
+                    id="permalink_27700523" style="position:absolute; right:1px; top:1px;
+                    width:7px; height:7px; display:none; padding:3px;" alt="permalink"/></a>
+
+                                    <div class="control">
+                        <div id="post_27700523_controls">
+                                                            <form action="/delete" method="post" id="delete_post_27700523"
+                                onsubmit="return confirm(\'Are you sure you want to delete this post?\')"><input
+                                type="hidden" name="id" value="27700523"/><input type="hidden"
+                                name="redirect_to" value="/dashboard"/></form>
+
+                                <a onclick="if (confirm(\'Delete this post?\'))
+                                document.getElementById(\'delete_post_27700523\').submit();
+                                return false;" href="#" title="Delete" class="delete_link"><img
+                                src="http://assets.tumblr.com/images/delete_icon.png?2" alt="Delete"/></a>
+
+                                <a href="/edit/27700523?redirect_to=%2Fdashboard" title="Edit"
+                                class="edit_link"><img src="http://assets.tumblr.com/images/edit_icon.png?2"
+                                alt="Edit"/></a>
+
+                        </div>
+                    </div>
+
+                <img src="http://assets.tumblr.com/images/round_corner_top_left.png"
+                class="top_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_top_right.png"
+                class="top_right_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_left.png"
+                class="bottom_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_right.png"
+                class="bottom_right_corner"/>
+            </div>
+        </li>
+
+        <li
+          id="post27700324"
+          class="
+            post
+            regular            same_user_as_last                        is_mine        "
+                    onmouseover="Element.show(\'permalink_27700324\');"
+            onmouseout="Element.hide(\'permalink_27700324\');"
+                >
+
+
+
+            <div style="padding:1px;">
+                <div class="post_container">
+
+                    <div class="username">
+                        <a href="http://tumblr.damog.net">damog</a>:
+                    </div>
+
+                                                                        <div style="font-weight:bold; margin-bottom:2px;">
+                                Prueba                            </div>
+
+                        Pues sí, sí es prueba.
+
+                    <div id="notes_outer_container_27700324" style="display:none; overflow:hidden;">
+                        <div style="padding-top:10px;">
+                            <div id="notes_container_27700324" style="display:none; overflow:hidden;"></div>
+
+                            <div id="notes_control_27700324" class="notes_control">
+                                <div id="notes_loader_27700324" class="notes_loader">
+                                    Loading...
+                                </div>
+
+                                <div id="notes_hide_link_27700324" style="display:none;" class="notes_hide_link">
+                                    <a href="#" onclick="Effect.SlideUp(\'notes_outer_container_27700324\');
+                                    $(\'show_notes_link_27700324\').style.textDecoration = \'underline\';
+                                    return false;" style="color:#79A0BE;">Hide notes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="so_ie_doesnt_treat_this_as_inline">
+                <div style="background:url(\'http://assets.tumblr.com/images/default_avatar_40.gif\') no-repeat;"
+                class="avatar"><a href="http://tumblr.damog.net"><img
+                src="http://assets.tumblr.com/images/avatar_border_40px.png"></a></div>
+
+                <div class="arrow"><img src="http://assets.tumblr.com/images/arrow_mask.png" alt=""/></div>
+
+                                    <a href="http://tumblr.damog.net/post/27700324" title="Permalink"><img
+                    src="http://assets.tumblr.com/images/permalink.png"
+                    id="permalink_27700324" style="position:absolute; right:1px; top:1px;
+                    width:7px; height:7px; display:none; padding:3px;" alt="permalink"/></a>
+
+                                    <div class="control">
+                        <div id="post_27700324_controls">
+                                                            <form action="/delete" method="post" id="delete_post_27700324"
+                                onsubmit="return confirm(\'Are you sure you want to delete this post?\')"><input
+                                type="hidden" name="id" value="27700324"/><input type="hidden"
+                                name="redirect_to" value="/dashboard"/></form>
+
+                                <a onclick="if (confirm(\'Delete this post?\'))
+                                document.getElementById(\'delete_post_27700324\').submit();
+                                return false;" href="#" title="Delete" class="delete_link"><img
+                                src="http://assets.tumblr.com/images/delete_icon.png?2" alt="Delete"/></a>
+
+                                <a href="/edit/27700324?redirect_to=%2Fdashboard" title="Edit"
+                                class="edit_link"><img src="http://assets.tumblr.com/images/edit_icon.png?2"
+                                alt="Edit"/></a>
+
+                        </div>
+                    </div>
+
+                <img src="http://assets.tumblr.com/images/round_corner_top_left.png"
+                class="top_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_top_right.png"
+                class="top_right_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_left.png"
+                class="bottom_left_corner"/>
+                <img src="http://assets.tumblr.com/images/round_corner_bottom_right.png"
+                class="bottom_right_corner"/>
+            </div>
+        </li>
+
+    </ol>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <strong>&copy; Tumblr, Inc.</strong>
+                <a href="/help">Help</a>
+                <a href="/api">API</a>
+                <a href="/content_policy">Content Policy</a>
+                <a href="/terms_of_service">Terms of Service</a>
+                <a href="/privacy_policy">Privacy Policy</a>
+            </div>
+        </div>
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+            _uacct = "UA-97144-8";
+            urchinTracker();
+        </script>
+    </body>
+</html>
+

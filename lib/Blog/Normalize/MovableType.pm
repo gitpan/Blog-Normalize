@@ -36,6 +36,34 @@ sub connect {
     return $self;
 }
 
+sub posts {
+	my($self) = shift;
+	
+	my $sth = $self->{dbh}->prepare(qq{
+		SELECT entry_id, entry_basename, entry_authored_on, entry_title, entry_text, entry_category_id
+		FROM $self->{prefix}entry
+		ORDER BY entry_authored_on
+	});
+	
+	$sth->execute;
+	
+	my $ret;
+	
+	while(my $ref = $sth->fetchrow_hashref) {
+		push @{$ret}, { 
+			id => $ref->{entry_id},
+			title => $ref->{entry_title},
+			date => $ref->{entry_authored_on},
+			category => $ref->{entry_category_id},
+			text => $ref->{entry_text},
+			name => $ref->{entry_basename},
+		},
+	}
+
+	return $ret;
+	
+}
+
 sub import {
 	my($self, %opts) = @_;
 	

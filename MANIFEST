@@ -5,5 +5,8 @@ lib/Blog/Normalize/Blogger.pm
 lib/Blog/Normalize/MovableType.pm
 lib/Blog/Normalize/TextMotion.pm
 lib/Blog/Normalize/Wordpress.pm
+lib/Blog/Normalize/Tumblr.pm
+examples/mt2tumblr.pl
 Changes
 .project
+README

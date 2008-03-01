@@ -5,7 +5,7 @@ package Blog::Normalize;
 use strict;
 use warnings;
 
-our $VERSION = '0.0rc1';
+our $VERSION = '0.0rc2';
 
 =head1 NAME
 
